@@ -23,6 +23,10 @@ module NavigationHelpers
     when /the details page for "(.*)"/ 
       id = Movie.find_by_title($1).id.to_s
       "/movies/#{id}"
+
+    when /the Similar Movies page for "(.*)"/
+      id = Movie.find_by_title($1).id.to_s
+      "/movies/#{id}/same_director"
     
 
     # Add more mappings here.
