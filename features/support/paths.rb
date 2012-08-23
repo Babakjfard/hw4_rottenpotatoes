@@ -19,6 +19,10 @@ module NavigationHelpers
     when /the edit page for "(.*)"/
       id = Movie.find_by_title($1).id.to_s
       "/movies/#{id}/edit"
+
+    when /the details page for "(.*)"/ 
+      id = Movie.find_by_title($1).id.to_s
+      "/movies/#{id}"
     
 
     # Add more mappings here.
