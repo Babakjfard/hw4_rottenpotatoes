@@ -11,9 +11,9 @@ group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'cucumber-rails'
   gem 'cucumber-rails-training-wheels'
-  gem 'database_cleaner'
+  gem 'database_cleaner' #to clear Cucumber's test database between runs
   gem 'capybara'
-  gem 'launchy'
+  gem 'launchy'          #a useful debugging aid for user stories
   gem 'rspec-rails'
   gem 'simplecov'
 end
