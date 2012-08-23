@@ -5,6 +5,6 @@ Given /the following movies exist/ do |movies_table|
 end
 
 Then /^the director of "(.*)" should be "(.*)"/ do |title, director|
-  movie = Moive.find_by_title(title)
+  movie = Movie.find_by_title(title)
   assert director == movie.director
 end
