@@ -63,7 +63,7 @@ class MoviesController < ApplicationController
     @movie = Movie.find_by_id(id)
 
     if @movie.director == nil or @movie.director ==""
-      flash[:warning] = "No director info available for movie #{@movie.title}"
+      flash[:warning] = "'#{@movie.title}' has no director info"
       redirect_to movies_path
       return
     else
