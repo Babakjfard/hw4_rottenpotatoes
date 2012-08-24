@@ -14,7 +14,7 @@ module NavigationHelpers
     case page_name
 
     when /^the home\s?page$/
-      '/'
+      '/movies'
 
     when /the edit page for "(.*)"/
       id = Movie.find_by_title($1).id.to_s
